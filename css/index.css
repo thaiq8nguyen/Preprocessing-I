@@ -1,1 +1,297 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+}
+/* LESS Variables */
+/* LESS Variables */
+/* LESS MIXINS */
+.nav-item-tag {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+.flex-row-display {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column-display {
+  display: flex;
+  flex-direction: column;
+}
+.article-heading h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+/* LESS MIXINS */
+/* STYLING */
+.header .nav-bar {
+  background: #D26363;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 1.5rem 0;
+}
+.header .nav-bar .nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+.header .nav-bar .nav-links .nav-item {
+  margin: 0 1.6rem;
+}
+.header .nav-bar .nav-links .nav-item a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: white;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem;
+  padding: 3rem;
+  background: whitesmoke;
+  border-radius: 2rem;
+}
+.main-container .introduction {
+  display: flex;
+  margin-bottom: 4rem;
+}
+.main-container .introduction .greeting {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5rem;
+  justify-content: center;
+}
+.main-container .introduction .greeting h1 {
+  font-size: 3.5rem;
+}
+.main-container .introduction .greeting p {
+  font-size: 3rem;
+  line-height: 10rem;
+}
+.main-container .brief-bio {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4rem;
+}
+.main-container .brief-bio .bio {
+  flex: 2;
+}
+.main-container .brief-bio .bio h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+.main-container .brief-bio .bio p {
+  font-size: 2.4rem;
+}
+.main-container .brief-bio .fun-facts {
+  flex: 1;
+  background: #304753;
+  margin-left: 5rem;
+  padding: 6rem;
+  color: white;
+  border-radius: 1rem;
+}
+.main-container .brief-bio .fun-facts h2 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+.main-container .brief-bio .fun-facts ul {
+  margin-bottom: 4rem;
+}
+.main-container .brief-bio .fun-facts ul li {
+  list-style-type: square;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+}
+.main-container .brief-bio .fun-facts .lets-connect-btn {
+  padding: 1.2rem 3rem;
+  font-size: 3rem;
+  color: white;
+  text-decoration: none;
+  background: #CF7E83;
+  border-radius: 1rem;
+}
+.main-container .brief-bio .fun-facts .lets-connect-btn:hover {
+  background: orange;
+}
+.main-container .work-history {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+.main-container .work-history h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+.main-container .work-history table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid grey;
+}
+.main-container .work-history table tr:nth-child(even) {
+  background: #D2A8AA;
+}
+.main-container .work-history table th {
+  border-collapse: collapse;
+  border: 1px solid grey;
+  padding: 15px;
+  font-size: 2.5rem;
+  background: #0E2A38;
+  color: white;
+}
+.main-container .work-history table td {
+  border-collapse: collapse;
+  border: 1px solid grey;
+  padding: 15px;
+  font-size: 2rem;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  background: #D26363;
+  padding: 1.5rem 0;
+  font-size: 2rem;
+  color: white;
+}

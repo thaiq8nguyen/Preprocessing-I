@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>My Resume</title>
-
   <link rel="stylesheet" href="css/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
   <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
@@ -14,6 +14,86 @@
 </head>
 
 <body>
-  <h1>My Resume</h1>
+  <div class="container">
+    <header class="header">
+      <nav class="nav-bar">
+        <ul class="nav-links">
+          <li class="nav-item"><a href="">Home</a></li>
+          <li class="nav-item"><a href="">About</a></li>
+          <li class="nav-item"><a href="">Contact</a></li>
+          <li class="nav-item"><a href="">Portfolio</a></li>
+          <li class="nav-item"><a href="">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <article class="introduction">
+        <img src="images/bio.jpg" alt="a picture of Thai Nguyen" width="200" height="200">
+        <div class="greeting">
+          <h1>Hello,</h1>
+          <p>My name is Thai Nguyen and I'm a web developer.</p>
+        </div>
+        
+      </article>
+      <article class="brief-bio">
+        <section class="bio">
+            <h1>Brief Bio</h1>
+            <p>
+              Sed quis convallis neque. Morbi nisl sem, dictum ut mauris id, auctor consequat purus. 
+              Mauris vestibulum dapibus turpis, eu congue massa pulvinar eu. In vel tempor purus, vel congue nulla. 
+              In nec bibendum nisi, nec dapibus diam. Nullam sed mattis nisi. Nam gravida diam vitae lorem lobortis convallis. 
+              Donec scelerisque lorem a arcu molestie tempus. Mauris pharetra massa sit amet lacus laoreet, sit amet sodales 
+              neque tempus. Donec egestas magna sed sagittis hendrerit. Fusce augue sapien, consectetur ac nunc ut, faucibus 
+              hendrerit quam. Morbi facilisis ante nec lectus viverra consectetur non sed libero. Cras vitae neque nec ante 
+              tempor ornare sed ut lorem.
+            </p>
+        </section>
+        <aside class="fun-facts">
+          <h2>Fun Facts</h2>
+          <ul>
+            <li>Sleep</li>
+            <li>Eat</li>
+            <li>Exercise</li>
+            <li>Code a bomb a** UI</li>
+            <li>Play video games</li>
+          </ul>
+          <a href="#" class="lets-connect-btn">Let's Connect!</a>
+        </aside>       
+      </article>
+      <article class="work-history">
+        <h1>Work History</h1>
+        <table>
+          <tr>
+            <th>Company</th>
+            <th>Time</th>
+            <th>Position</th>
+          </tr>
+          <tr>
+            <td>ABC Inc</td>
+            <td>1999-2005</td>
+            <td>Apprentice</td>
+          </tr>
+          <tr>
+            <td>Sigma Corp</td>
+            <td>2006-2010</td>
+            <td>Jr Developer</td>
+          </tr>
+          <tr>
+            <td>Delta Corp</td>
+            <td>2011-2015</td>
+            <td>Big boss assistant</td>
+          </tr>
+          <tr>
+            <td>Lambda LLC</td>
+            <td>2015-present</td>
+            <td>Partner</td>
+          </tr>
+        </table>
+      </article>
+    </main>
+    <footer class="footer">
+      <h1>All Rights Reserved &copy 2019</h1>
+    </footer>
+  </div>
 </body>
 </html>
